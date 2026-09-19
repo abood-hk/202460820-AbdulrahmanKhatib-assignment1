@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal portfolio of Abdulrahman Khatib"
+    />
+    <title>Abdulrahman Khatib | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a class="logo" href="#about">AK.</a>
+
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button id="theme-toggle" class="theme-button" type="button">
+          Dark mode
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="hero section">
+        <div class="container hero-content">
+          <div>
+            <p id="greeting" class="eyebrow">Welcome to my portfolio</p>
+            <h1>Building simple ideas into useful digital experiences.</h1>
+            <p class="hero-text">
+              I am Abdulrahman Khatib, a Computer Science student at KFUPM . I
+              enjoy creating clean, responsive websites that are easy to use and
+              understand.
+            </p>
+
+            <div class="hero-buttons">
+              <a class="button" href="#projects">View my projects</a>
+              <a class="button button-secondary" href="#contact">Contact me</a>
+            </div>
+          </div>
+
+          <div class="profile-card" aria-label="Profile placeholder">
+            <span>AK</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <p class="eyebrow">My work</p>
+          <h2>Projects</h2>
+          <p class="section-intro">
+            Here are two projects that demonstrate my interest in design,
+            development, and problem-solving.
+          </p>
+          <div class="project-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/NotesAPI.png"
+                  alt="Screenshot of the Note API project"
+                />
+              </div>
+
+              <div class="project-content">
+                <h3>Note API</h3>
+                <p>
+                  A simple website where users can write, edit, retrieve, and
+                  delete notes.
+                </p>
+                <span class="project-tag">
+                  HTML · MongoDB · CSS · EJS · JavaScript
+                </span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <img
+                  src="assets/images/Bookly.png"
+                  alt="Screenshot of the Bookly project"
+                />
+              </div>
+
+              <div class="project-content">
+                <h3>Book Library</h3>
+                <p>
+                  A book library website where users can search for books, add
+                  them to favourites, and write reviews.
+                </p>
+                <span class="project-tag">
+                  TypeScript · React · MongoDB · Tailwind
+                </span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div class="container contact-content">
+          <div>
+            <p class="eyebrow">Get in touch</p>
+            <h2>Contact Me</h2>
+            <p>
+              Have a question or want to discuss a project? Send me a message
+              using the form.
+            </p>
+          </div>
+
+          <form id="contact-form" class="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="button" type="submit">Send message</button>
+            <p id="form-status" class="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>
+          &copy; <span id="current-year"></span> Abdulrahman Khatib. All rights
+          reserved.
+        </p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
